@@ -58,7 +58,7 @@ void setup()
   Serial.println("WiFi connected");
   server.begin();
   Serial.println("Server started");
-  // Print the IP address
+  // Print the IP addresss
   Serial.println(WiFi.localIP());
 
 }
@@ -221,6 +221,7 @@ transport();
   // measure duration of pulse from ECHO pin
   duration_us = pulseIn(echoPin, HIGH);
 
+  //ultrasonic calculate errors
   // calculate the distance
   distance_cm = 0.017 * duration_us;
 
